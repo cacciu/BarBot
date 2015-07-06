@@ -1,0 +1,202 @@
+PCBNEW-LibModule-V1  24.06.2015 17:25:38
+# encoding utf-8
+Units mm
+$INDEX
+Pololu_A4988
+Terminal-4
+Terminal2
+$EndINDEX
+$MODULE Pololu_A4988
+Po 0 0 0 15 558ACBE0 00000000 ~~
+Li Pololu_A4988
+Sc 0
+AR 
+Op 0 0 0
+T0 0 2 1 1 0 0.15 N V 21 N "Pololu A4988"
+T1 0 -1 1 1 0 0.15 N V 21 N "VAL**"
+DS -7.62 -10.16 7.62 -10.16 0.15 21
+DS 7.62 -10.16 7.62 10.16 0.15 21
+DS 7.62 10.16 -7.62 10.16 0.15 21
+DS -7.62 10.16 -7.62 -10.16 0.15 21
+$PAD
+Sh "1" C 2.4 2.4 0 0 0
+Dr 1.2 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -6.35 -8.89
+$EndPAD
+$PAD
+Sh "2" C 2.4 2.4 0 0 0
+Dr 1.2 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -6.35 -6.35
+$EndPAD
+$PAD
+Sh "3" C 2.4 2.4 0 0 0
+Dr 1.2 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -6.35 -3.81
+$EndPAD
+$PAD
+Sh "4" C 2.4 2.4 0 0 0
+Dr 1.2 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -6.35 -1.27
+$EndPAD
+$PAD
+Sh "5" C 2.4 2.4 0 0 0
+Dr 1.2 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -6.35 1.27
+$EndPAD
+$PAD
+Sh "6" C 2.4 2.4 0 0 0
+Dr 1.2 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -6.35 3.81
+$EndPAD
+$PAD
+Sh "7" C 2.4 2.4 0 0 0
+Dr 1.2 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -6.35 6.35
+$EndPAD
+$PAD
+Sh "8" C 2.4 2.4 0 0 0
+Dr 1.2 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -6.35 8.89
+$EndPAD
+$PAD
+Sh "9" C 2.4 2.4 0 0 0
+Dr 1.2 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 6.35 8.89
+$EndPAD
+$PAD
+Sh "10" C 2.4 2.4 0 0 0
+Dr 1.2 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 6.35 6.35
+$EndPAD
+$PAD
+Sh "11" C 2.4 2.4 0 0 0
+Dr 1.2 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 6.35 3.81
+$EndPAD
+$PAD
+Sh "12" C 2.4 2.4 0 0 0
+Dr 1.2 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 6.35 1.27
+$EndPAD
+$PAD
+Sh "13" C 2.4 2.4 0 0 0
+Dr 1.2 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 6.35 -1.27
+$EndPAD
+$PAD
+Sh "14" C 2.4 2.4 0 0 0
+Dr 1.2 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 6.35 -3.81
+$EndPAD
+$PAD
+Sh "15" C 2.4 2.4 0 0 0
+Dr 1.2 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 6.35 -6.35
+$EndPAD
+$PAD
+Sh "16" C 2.4 2.4 0 0 0
+Dr 1.2 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 6.35 -8.89
+$EndPAD
+$EndMODULE Pololu_A4988
+$MODULE Terminal-4
+Po 0 0 0 15 558AC8FD 00000000 ~~
+Li Terminal-4
+Sc 0
+AR 
+Op 0 0 0
+T0 0 -1 1 1 0 0.15 N V 21 N "Terminal-4"
+T1 0 1 1 1 0 0.15 N V 21 N "VAL**"
+DS 8 -8 8 2 0.15 21
+DS 8 2 -8 2 0.15 21
+DS -8 2 -8 -8 0.15 21
+DS -8 -8 8 -8 0.15 21
+$PAD
+Sh "2" C 3.2 3.2 0 0 0
+Dr 1.3 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -2 0
+$EndPAD
+$PAD
+Sh "3" C 3.2 3.2 0 0 0
+Dr 1.3 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 2 0
+$EndPAD
+$PAD
+Sh "4" C 3.2 3.2 0 0 0
+Dr 1.3 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 6 0
+$EndPAD
+$PAD
+Sh "1" C 3.2 3.2 0 0 0
+Dr 1.3 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -6 0
+$EndPAD
+$EndMODULE Terminal-4
+$MODULE Terminal2
+Po 0 0 0 15 558AC7E6 00000000 ~~
+Li Terminal2
+Sc 0
+AR 
+Op 0 0 0
+T0 0 -3.81 1 1 0 0.15 N V 21 N "Terminal2"
+T1 0 -2.54 1 1 0 0.15 N V 21 N "VAL**"
+DS -4 -8 4 -8 0.15 21
+DS 4 -8 4 2 0.15 21
+DS 4 2 -4 2 0.15 21
+DS -4 2 -4 -8 0.15 21
+$PAD
+Sh "1" C 3.2 3.2 0 0 0
+Dr 1.3 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -2 0
+$EndPAD
+$PAD
+Sh "2" C 3.2 3.2 0 0 0
+Dr 1.3 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 2 0
+$EndPAD
+$EndMODULE Terminal2
+$EndLIBRARY

@@ -1,0 +1,101 @@
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 24.06.2015 17:31:06
+
+BeginCmp
+TimeStamp = /558AC0F9;
+Reference = C1;
+ValeurCmp = CP1;
+IdModule  = SMDSVP10;
+EndCmp
+
+BeginCmp
+TimeStamp = /558ABFE8;
+Reference = JP1;
+ValeurCmp = JUMPER;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /558ABFF5;
+Reference = JP2;
+ValeurCmp = JUMPER;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /558ABFFB;
+Reference = JP3;
+ValeurCmp = JUMPER;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /558AC2EB;
+Reference = P1;
+ValeurCmp = CONN_2;
+IdModule  = Terminal2;
+EndCmp
+
+BeginCmp
+TimeStamp = /558AC557;
+Reference = P2;
+ValeurCmp = CONN_2;
+IdModule  = Terminal2;
+EndCmp
+
+BeginCmp
+TimeStamp = /558AC112;
+Reference = P3;
+ValeurCmp = CONN_2;
+IdModule  = Terminal2;
+EndCmp
+
+BeginCmp
+TimeStamp = /558AC365;
+Reference = P4;
+ValeurCmp = CONN_4;
+IdModule  = Terminal-4;
+EndCmp
+
+BeginCmp
+TimeStamp = /558AC30D;
+Reference = R1;
+ValeurCmp = R;
+IdModule  = R4;
+EndCmp
+
+BeginCmp
+TimeStamp = /558AC003;
+Reference = R2;
+ValeurCmp = R;
+IdModule  = R4;
+EndCmp
+
+BeginCmp
+TimeStamp = /558AC31C;
+Reference = R3;
+ValeurCmp = R;
+IdModule  = R4;
+EndCmp
+
+BeginCmp
+TimeStamp = /558AC010;
+Reference = R4;
+ValeurCmp = R;
+IdModule  = R4;
+EndCmp
+
+BeginCmp
+TimeStamp = /558AC016;
+Reference = R5;
+ValeurCmp = R;
+IdModule  = R4;
+EndCmp
+
+BeginCmp
+TimeStamp = /558ABE55;
+Reference = U1;
+ValeurCmp = POLOLU_A4988;
+IdModule  = Pololu_A4988;
+EndCmp
+
+EndListe
