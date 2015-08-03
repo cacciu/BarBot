@@ -1,0 +1,10 @@
+Output: Report Single Pin Nets
+Type  : SinglePinNetReporter
+From  : Variant [[No Variations]] of Project [Cup_Dispenser_Prototype.PrjPcb]
+   Generated File[Schematic.REP]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 18:29:34 On 03.08.2015
