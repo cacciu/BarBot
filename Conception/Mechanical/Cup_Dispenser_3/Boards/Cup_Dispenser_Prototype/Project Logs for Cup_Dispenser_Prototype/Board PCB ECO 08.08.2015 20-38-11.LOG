@@ -1,0 +1,6 @@
+Change Component Footprint: Designator=X1 Old Footprint=Wannenstecker 10p New Footprint=12p Wurth 690 367 28 12 76
+Change Component Footprint: Designator=X2 Old Footprint=Wannenstecker 10p New Footprint=12p Wurth 690 367 28 12 76
+Added Pin To Net: NetName=FILLED Pin=X1-11
+Added Pin To Net: NetName=EST_2 Pin=X1-12
+Added Pin To Net: NetName=FILLED Pin=X2-11
+Added Pin To Net: NetName=EST_1 Pin=X2-12

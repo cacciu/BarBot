@@ -1,0 +1,51 @@
+Removed Pin From Net: NetName=NON Pin=U1-32
+Removed Pin From Net: NetName=SPI1_XLAT Pin=X1-1
+Removed Pin From Net: NetName=/EN_1 Pin=X1-2
+Removed Pin From Net: NetName=SPI1_SCK Pin=X1-3
+Removed Pin From Net: NetName=STEP_1 Pin=X1-4
+Removed Pin From Net: NetName=BLANK_1 Pin=X1-5
+Removed Pin From Net: NetName=DIR_1 Pin=X1-6
+Removed Pin From Net: NetName=SPI1_MOSI Pin=X1-7
+Removed Pin From Net: NetName=3V3 Pin=X1-8
+Removed Pin From Net: NetName=GND Pin=X1-9
+Removed Pin From Net: NetName=VMOT Pin=X1-10
+Removed Pin From Net: NetName=SPI2_XLAT Pin=X2-1
+Removed Pin From Net: NetName=/EN_2 Pin=X2-2
+Removed Pin From Net: NetName=SPI2_SCK Pin=X2-3
+Removed Pin From Net: NetName=STEP_2 Pin=X2-4
+Removed Pin From Net: NetName=BLANK_2 Pin=X2-5
+Removed Pin From Net: NetName=DIR_2 Pin=X2-6
+Removed Pin From Net: NetName=SPI2_MOSI Pin=X2-7
+Removed Pin From Net: NetName=3V3 Pin=X2-8
+Removed Pin From Net: NetName=GND Pin=X2-9
+Removed Pin From Net: NetName=VMOT Pin=X2-10
+Change Component DesignItemId : Designator=X1 Old DesignItemId=Wannenstecker 10p New DesignItemId=12p Connector
+Change Component DesignItemId : Designator=X2 Old DesignItemId=Wannenstecker 10p New DesignItemId=12p Connector
+Change Component Comment : Designator=X1 Old Comment=IN New Comment=OUT
+Change Component Comment : Designator=X2 Old Comment=OUT New Comment=IN
+Change Component Comment : Designator=X5 Old Comment=SWD New Comment=Wannenstecker 10p
+Added Pin To Net: NetName=VMOT Pin=X1-1
+Added Pin To Net: NetName=GND Pin=X1-2
+Added Pin To Net: NetName=3V3 Pin=X1-3
+Added Pin To Net: NetName=SPI2_MOSI Pin=X1-4
+Added Pin To Net: NetName=DIR_2 Pin=X1-5
+Added Pin To Net: NetName=BLANK_2 Pin=X1-6
+Added Pin To Net: NetName=STEP_2 Pin=X1-7
+Added Pin To Net: NetName=SPI2_SCK Pin=X1-8
+Added Pin To Net: NetName=/EN_2 Pin=X1-9
+Added Pin To Net: NetName=SPI2_XLAT Pin=X1-10
+Added Pin To Net: NetName=VMOT Pin=X2-1
+Added Pin To Net: NetName=GND Pin=X2-2
+Added Pin To Net: NetName=3V3 Pin=X2-3
+Added Pin To Net: NetName=SPI1_MOSI Pin=X2-4
+Added Pin To Net: NetName=DIR_1 Pin=X2-5
+Added Pin To Net: NetName=BLANK_1 Pin=X2-6
+Added Pin To Net: NetName=STEP_1 Pin=X2-7
+Added Pin To Net: NetName=SPI1_SCK Pin=X2-8
+Added Pin To Net: NetName=/EN_1 Pin=X2-9
+Added Pin To Net: NetName=SPI1_XLAT Pin=X2-10
+Change Net Name : Old Net Name=EST New Net Name=EST_1
+Added Pin To Net: NetName=EST_2 Pin=U1-22
+Added Net: Name=EST_2
+Added Pin To Net: NetName=NON_1 Pin=U1-32
+Added Net: Name=NON_1

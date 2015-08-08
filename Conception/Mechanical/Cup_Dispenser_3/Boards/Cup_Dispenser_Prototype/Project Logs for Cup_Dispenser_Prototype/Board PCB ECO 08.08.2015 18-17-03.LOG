@@ -1,0 +1,21 @@
+Removed Pin From Net: NetName=NRST Pin=R2-1
+Removed Pin From Net: NetName=NRST Pin=S2-1
+Removed Pin From Net: NetName=NRST Pin=S2-4
+Removed Pin From Net: NetName=S1 Pin=U1-10
+Change Component Footprint: Designator=C8 Old Footprint=CAPR5-4X5 New Footprint=Res 0603
+Change Component Footprint: Designator=C9 Old Footprint=CAPR5-4X5 New Footprint=Res 0603
+Change Component Footprint: Designator=C1 Old Footprint=RAD-0.3 New Footprint=Res 0603
+Change Component Footprint: Designator=C2 Old Footprint=RAD-0.3 New Footprint=Res 0603
+Change Component Footprint: Designator=C3 Old Footprint=RAD-0.3 New Footprint=Res 0603
+Change Component Footprint: Designator=C4 Old Footprint=RAD-0.3 New Footprint=Res 0603
+Change Component Footprint: Designator=C5 Old Footprint=RAD-0.3 New Footprint=Res 0603
+Change Component Footprint: Designator=C6 Old Footprint=RAD-0.3 New Footprint=Res 0603
+Change Component Footprint: Designator=C7 Old Footprint=RAD-0.3 New Footprint=Res 0603
+Change Component Footprint: Designator=C10 Old Footprint=RAD-0.3 New Footprint=Res 0603
+Change Net Name : Old Net Name=S1 New Net Name=NetR1_1
+Added Pin To Net: NetName=NetR2_1 Pin=R2-1
+Added Pin To Net: NetName=NetR2_1 Pin=S2-1
+Added Pin To Net: NetName=NetR2_1 Pin=S2-4
+Added Net: Name=NetR2_1
+Added Pin To Net: NetName=S1 Pin=U1-10
+Added Net: Name=S1
