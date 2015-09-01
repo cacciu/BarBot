@@ -1,0 +1,52 @@
+Net Status Report
+Filename     : C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc
+Date         : 14.08.2015
+Time         : 20:19:22
+Time Elapsed : 00:00:00
+
+Nets, Layer, Length
+    /EN_1, Signal Layers Only, 5078.996mils
+    /EN_2, Signal Layers Only, 4122.001mils
+    1A_1, Signal Layers Only, 464.509mils
+    1B_1, Signal Layers Only, 475.897mils
+    2A_1, Signal Layers Only, 453.123mils
+    2B_1, Signal Layers Only, 441.735mils
+    5V, Signal Layers Only, 9883.036mils
+    BLANK_1, Signal Layers Only, 1635.766mils
+    BLANK_2, Signal Layers Only, 4060.419mils
+    DIR_1, Signal Layers Only, 4381.992mils
+    DIR_2, Signal Layers Only, 4074.307mils
+    EST_1, Signal Layers Only, 2441.824mils
+    EST_2, Signal Layers Only, 4942.441mils
+    FILLED, Signal Layers Only, 6037.751mils
+    GND, Signal Layers Only, 4902.674mils
+    NON, Signal Layers Only, 2683.112mils
+    NRST, Signal Layers Only, 2489.66mils
+    NetC10_1, Signal Layers Only, 73.333mils
+    NetC10_2, Signal Layers Only, 77.532mils
+    NetC11_1, Signal Layers Only, 112.582mils
+    NetC11_2, Signal Layers Only, 737.364mils
+    NetIC1_2, Signal Layers Only, 239.731mils
+    NetIC1_3, Signal Layers Only, 234.857mils
+    NetIC1_4, Signal Layers Only, 220.772mils
+    NetIC1_5, Signal Layers Only, 216.92mils
+    NetIC1_6, Signal Layers Only, 209.157mils
+    NetIC2_7, Signal Layers Only, 226.191mils
+    NetJ6_1, Signal Layers Only, 1872.211mils
+    NetR8_1, Signal Layers Only, 205.022mils
+    NetR9_1, Signal Layers Only, 204.407mils
+    S1, Signal Layers Only, 2028.559mils
+    SPI1_MOSI, Signal Layers Only, 1623.906mils
+    SPI1_SCK, Signal Layers Only, 1651.807mils
+    SPI1_XLAT, Signal Layers Only, 1374.232mils
+    SPI2_MOSI, Signal Layers Only, 3956.615mils
+    SPI2_SCK, Signal Layers Only, 4245.58mils
+    SPI2_XLAT, Signal Layers Only, 4173.834mils
+    STEP_1, Signal Layers Only, 4504.225mils
+    STEP_2, Signal Layers Only, 4059.468mils
+    SWCLK, Signal Layers Only, 886.937mils
+    SWDIO, Signal Layers Only, 913.634mils
+    UART_RX, Signal Layers Only, 374.512mils
+    UART_TX, Signal Layers Only, 298.99mils
+    VMOT, Signal Layers Only, 7302.349mils
+count : 44

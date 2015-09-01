@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=GND Pin=IC2-9
+Added Pin To Net: NetName=NON Pin=U1-32
+Added Room: Name=FillLevelSensor
+Added Room: Name=Power
+Added Room: Name=Schematic

@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=GND Pin=S1-3
+Removed Pin From Net: NetName=S1 Pin=S1-4
+Removed Pin From Net: NetName=GND Pin=S2-3
+Removed Pin From Net: NetName=NRST Pin=S2-4
+Added Room: Name=FillLevelSensor
+Added Room: Name=Power
+Added Room: Name=Schematic

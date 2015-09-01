@@ -1,0 +1,105 @@
+Added Component: Designator=C1_LVDSChannelA(1608[0603])
+Added Component: Designator=C1_LVDSChannelB(1608[0603])
+Added Component: Designator=P1_LVDSChannelA(HDR1X6)
+Added Component: Designator=P1_LVDSChannelB(HDR1X6)
+Added Component: Designator=P2_LVDSChannelA(HDR1X2)
+Added Component: Designator=P2_LVDSChannelB(HDR1X2)
+Added Component: Designator=P3_LVDSChannelA(HDR1X2)
+Added Component: Designator=P3_LVDSChannelB(HDR1X2)
+Added Component: Designator=P4(HDR1X6)
+Added Component: Designator=P5(HDR1X2)
+Added Component: Designator=R1_LVDSChannelA(J1-0603)
+Added Component: Designator=R1_LVDSChannelB(J1-0603)
+Added Component: Designator=R2_LVDSChannelA(J1-0603)
+Added Component: Designator=R2_LVDSChannelB(J1-0603)
+Added Component: Designator=R3_LVDSChannelA(J1-0603)
+Added Component: Designator=R3_LVDSChannelB(J1-0603)
+Added Component: Designator=R4_LVDSChannelA(J1-0603)
+Added Component: Designator=R4_LVDSChannelB(J1-0603)
+Added Component: Designator=U1_LVDSChannelA(SOP127P600-8N)
+Added Component: Designator=U1_LVDSChannelB(SOP127P600-8N)
+Added Pin To Net: NetName=GND Pin=C1_LVDSChannelA-1
+Added Pin To Net: NetName=3V3 Pin=C1_LVDSChannelA-2
+Added Pin To Net: NetName=GND Pin=C1_LVDSChannelB-1
+Added Pin To Net: NetName=3V3 Pin=C1_LVDSChannelB-2
+Added Pin To Net: NetName=3V3 Pin=P1_LVDSChannelA-1
+Added Pin To Net: NetName=GND Pin=P1_LVDSChannelA-2
+Added Pin To Net: NetName=3V3 Pin=P1_LVDSChannelB-1
+Added Pin To Net: NetName=GND Pin=P1_LVDSChannelB-2
+Added Pin To Net: NetName=GND Pin=P3_LVDSChannelA-1
+Added Pin To Net: NetName=GND Pin=P3_LVDSChannelA-2
+Added Pin To Net: NetName=GND Pin=P3_LVDSChannelB-1
+Added Pin To Net: NetName=GND Pin=P3_LVDSChannelB-2
+Added Pin To Net: NetName=3V3 Pin=P4-1
+Added Pin To Net: NetName=GND Pin=P4-2
+Added Pin To Net: NetName=RST Pin=P4-6
+Added Pin To Net: NetName=GND Pin=P5-1
+Added Pin To Net: NetName=RST Pin=P5-2
+Added Pin To Net: NetName=3V3 Pin=U1_LVDSChannelA-12
+Added Pin To Net: NetName=GND Pin=U1_LVDSChannelA-13
+Added Pin To Net: NetName=3V3 Pin=U1_LVDSChannelA-16
+Added Pin To Net: NetName=3V3 Pin=U1_LVDSChannelB-12
+Added Pin To Net: NetName=GND Pin=U1_LVDSChannelB-13
+Added Pin To Net: NetName=3V3 Pin=U1_LVDSChannelB-16
+Added Pin To Net: NetName=DIN_LVDSChannelA Pin=P1_LVDSChannelA-3
+Added Pin To Net: NetName=DIN_LVDSChannelA Pin=U1_LVDSChannelA-10
+Added Net: Name=DIN_LVDSChannelA
+Added Pin To Net: NetName=DIN_LVDSChannelB Pin=P1_LVDSChannelB-3
+Added Pin To Net: NetName=DIN_LVDSChannelB Pin=U1_LVDSChannelB-10
+Added Net: Name=DIN_LVDSChannelB
+Added Pin To Net: NetName=DOUT1_LVDSChannelA_N Pin=R3_LVDSChannelA-2
+Added Pin To Net: NetName=DOUT1_LVDSChannelA_N Pin=U1_LVDSChannelA-8
+Added Net: Name=DOUT1_LVDSChannelA_N
+Added Pin To Net: NetName=DOUT1_LVDSChannelA_P Pin=R2_LVDSChannelA-2
+Added Pin To Net: NetName=DOUT1_LVDSChannelA_P Pin=U1_LVDSChannelA-7
+Added Net: Name=DOUT1_LVDSChannelA_P
+Added Pin To Net: NetName=DOUT1_LVDSChannelB_N Pin=R3_LVDSChannelB-2
+Added Pin To Net: NetName=DOUT1_LVDSChannelB_N Pin=U1_LVDSChannelB-8
+Added Net: Name=DOUT1_LVDSChannelB_N
+Added Pin To Net: NetName=DOUT1_LVDSChannelB_P Pin=R2_LVDSChannelB-2
+Added Pin To Net: NetName=DOUT1_LVDSChannelB_P Pin=U1_LVDSChannelB-7
+Added Net: Name=DOUT1_LVDSChannelB_P
+Added Pin To Net: NetName=NBIAS_LVDSChannelA Pin=P1_LVDSChannelA-5
+Added Pin To Net: NetName=NBIAS_LVDSChannelA Pin=R4_LVDSChannelA-1
+Added Net: Name=NBIAS_LVDSChannelA
+Added Pin To Net: NetName=NBIAS_LVDSChannelB Pin=P1_LVDSChannelB-5
+Added Pin To Net: NetName=NBIAS_LVDSChannelB Pin=R4_LVDSChannelB-1
+Added Net: Name=NBIAS_LVDSChannelB
+Added Pin To Net: NetName=NEN_LVDSChannelA Pin=P1_LVDSChannelA-4
+Added Pin To Net: NetName=NEN_LVDSChannelA Pin=U1_LVDSChannelA-9
+Added Net: Name=NEN_LVDSChannelA
+Added Pin To Net: NetName=NEN_LVDSChannelB Pin=P1_LVDSChannelB-4
+Added Pin To Net: NetName=NEN_LVDSChannelB Pin=U1_LVDSChannelB-9
+Added Net: Name=NEN_LVDSChannelB
+Added Pin To Net: NetName=NetP2_LVDSChannelA_1 Pin=P2_LVDSChannelA-1
+Added Pin To Net: NetName=NetP2_LVDSChannelA_1 Pin=R1_LVDSChannelA-1
+Added Pin To Net: NetName=NetP2_LVDSChannelA_1 Pin=R2_LVDSChannelA-1
+Added Net: Name=NetP2_LVDSChannelA_1
+Added Pin To Net: NetName=NetP2_LVDSChannelA_2 Pin=P2_LVDSChannelA-2
+Added Pin To Net: NetName=NetP2_LVDSChannelA_2 Pin=R3_LVDSChannelA-1
+Added Pin To Net: NetName=NetP2_LVDSChannelA_2 Pin=R4_LVDSChannelA-2
+Added Net: Name=NetP2_LVDSChannelA_2
+Added Pin To Net: NetName=NetP2_LVDSChannelB_1 Pin=P2_LVDSChannelB-1
+Added Pin To Net: NetName=NetP2_LVDSChannelB_1 Pin=R1_LVDSChannelB-1
+Added Pin To Net: NetName=NetP2_LVDSChannelB_1 Pin=R2_LVDSChannelB-1
+Added Net: Name=NetP2_LVDSChannelB_1
+Added Pin To Net: NetName=NetP2_LVDSChannelB_2 Pin=P2_LVDSChannelB-2
+Added Pin To Net: NetName=NetP2_LVDSChannelB_2 Pin=R3_LVDSChannelB-1
+Added Pin To Net: NetName=NetP2_LVDSChannelB_2 Pin=R4_LVDSChannelB-2
+Added Net: Name=NetP2_LVDSChannelB_2
+Added Pin To Net: NetName=PBIAS_LVDSChannelA Pin=P1_LVDSChannelA-6
+Added Pin To Net: NetName=PBIAS_LVDSChannelA Pin=R1_LVDSChannelA-2
+Added Net: Name=PBIAS_LVDSChannelA
+Added Pin To Net: NetName=PBIAS_LVDSChannelB Pin=P1_LVDSChannelB-6
+Added Pin To Net: NetName=PBIAS_LVDSChannelB Pin=R1_LVDSChannelB-2
+Added Net: Name=PBIAS_LVDSChannelB
+Added Class: Name=LVDSChannelA
+Added Class: Name=LVDSChannelB
+Added Differential Pair: Name=DOUT1_LVDSChannelA
+Added Differential Pair: Name=DOUT1_LVDSChannelB
+Added Class: Name=LVDS_Channel
+Added Member To Class: ClassName=TopAdapter Member=Component P4 Header 6
+Added Member To Class: ClassName=TopAdapter Member=Component P5 Header 2
+Added Room: Name=LVDSChannelA
+Added Room: Name=LVDSChannelB
+Added Room: Name=TopAdapter

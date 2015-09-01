@@ -1,7 +1,7 @@
 [Design]
 Version=1.0
 HierarchyMode=0
-ChannelRoomNamingStyle=0
+ChannelRoomNamingStyle=4
 ReleasesFolder=
 ReleaseVaultGUID=
 ReleaseVaultName=
@@ -37,13 +37,13 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=Sheet1.SchDoc
+DocumentPath=TwoChipAdapter.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=0
+AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -51,9 +51,43 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=ORVSTGHC
+DocumentUniqueId=FMNFHOEY
 
 [Document2]
+DocumentPath=LVDS_Channel.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=LUSIPSXU
+
+[Document3]
+DocumentPath=TopAdapter.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=2
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=TVGVWELS
+
+[Document4]
 DocumentPath=PcbLib1.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -70,7 +104,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RJVNHWFL
 
-[Document3]
+[Document5]
 DocumentPath=Schlib1.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -87,7 +121,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JYRTDPAI
 
-[Document4]
+[Document6]
 DocumentPath=Job1.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -104,7 +138,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document5]
+[Document7]
 DocumentPath=PCB.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -134,103 +168,79 @@ DocumentPath=Project Outputs for LVDS_Adaptor\Gerber\PCB1.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for LVDS_Adaptor\Gerber\PCB1.GBL
-DItemRevisionGUID=
-
-[GeneratedDocument5]
-DocumentPath=Project Outputs for LVDS_Adaptor\Gerber\PCB1.GM1
-DItemRevisionGUID=
-
-[GeneratedDocument6]
-DocumentPath=Project Outputs for LVDS_Adaptor\Gerber\PCB1.GTL
-DItemRevisionGUID=
-
-[GeneratedDocument7]
 DocumentPath=Project Outputs for LVDS_Adaptor\NC Drill\PCB1.LDP
 DItemRevisionGUID=
 
-[GeneratedDocument8]
+[GeneratedDocument5]
 DocumentPath=Project Outputs for LVDS_Adaptor\Gerber\PCB1.REP
 DItemRevisionGUID=
 
-[GeneratedDocument9]
+[GeneratedDocument6]
 DocumentPath=Project Outputs for LVDS_Adaptor\Gerber\PCB1.RUL
 DItemRevisionGUID=
 
-[GeneratedDocument10]
+[GeneratedDocument7]
 DocumentPath=Project Outputs for LVDS_Adaptor\NC Drill\PCB1.TXT
 DItemRevisionGUID=
 
-[GeneratedDocument11]
-DocumentPath=.\Simple Breakout.DRR
-DItemRevisionGUID=
-
-[GeneratedDocument12]
+[GeneratedDocument8]
 DocumentPath=Project Outputs for LVDS_Adaptor\NC Drill\Simple Breakout.DRR
 DItemRevisionGUID=
 
-[GeneratedDocument13]
-DocumentPath=.\Simple Breakout.EXTREP
+[GeneratedDocument9]
+DocumentPath=Simple Breakout.DRR
 DItemRevisionGUID=
 
-[GeneratedDocument14]
+[GeneratedDocument10]
 DocumentPath=Project Outputs for LVDS_Adaptor\Gerber\Simple Breakout.EXTREP
 DItemRevisionGUID=
 
-[GeneratedDocument15]
-DocumentPath=.\Simple Breakout.GBL
+[GeneratedDocument11]
+DocumentPath=Simple Breakout.EXTREP
 DItemRevisionGUID=
 
-[GeneratedDocument16]
+[GeneratedDocument12]
 DocumentPath=Project Outputs for LVDS_Adaptor\Gerber\Simple Breakout.GBL
 DItemRevisionGUID=
 
-[GeneratedDocument17]
-DocumentPath=.\Simple Breakout.GM1
-DItemRevisionGUID=
-
-[GeneratedDocument18]
+[GeneratedDocument13]
 DocumentPath=Project Outputs for LVDS_Adaptor\Gerber\Simple Breakout.GM1
 DItemRevisionGUID=
 
-[GeneratedDocument19]
-DocumentPath=.\Simple Breakout.GTL
-DItemRevisionGUID=
-
-[GeneratedDocument20]
+[GeneratedDocument14]
 DocumentPath=Project Outputs for LVDS_Adaptor\Gerber\Simple Breakout.GTL
 DItemRevisionGUID=
 
-[GeneratedDocument21]
-DocumentPath=.\Simple Breakout.LDP
-DItemRevisionGUID=
-
-[GeneratedDocument22]
+[GeneratedDocument15]
 DocumentPath=Project Outputs for LVDS_Adaptor\NC Drill\Simple Breakout.LDP
 DItemRevisionGUID=
 
-[GeneratedDocument23]
-DocumentPath=.\Simple Breakout.REP
+[GeneratedDocument16]
+DocumentPath=Simple Breakout.LDP
 DItemRevisionGUID=
 
-[GeneratedDocument24]
+[GeneratedDocument17]
 DocumentPath=Project Outputs for LVDS_Adaptor\Gerber\Simple Breakout.REP
 DItemRevisionGUID=
 
-[GeneratedDocument25]
-DocumentPath=.\Simple Breakout.RUL
+[GeneratedDocument18]
+DocumentPath=Simple Breakout.REP
 DItemRevisionGUID=
 
-[GeneratedDocument26]
+[GeneratedDocument19]
 DocumentPath=Project Outputs for LVDS_Adaptor\Gerber\Simple Breakout.RUL
 DItemRevisionGUID=
 
-[GeneratedDocument27]
-DocumentPath=.\Simple Breakout.TXT
+[GeneratedDocument20]
+DocumentPath=Simple Breakout.RUL
 DItemRevisionGUID=
 
-[GeneratedDocument28]
+[GeneratedDocument21]
 DocumentPath=Project Outputs for LVDS_Adaptor\NC Drill\Simple Breakout.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument22]
+DocumentPath=Simple Breakout.TXT
 DItemRevisionGUID=
 
 [Configuration1]

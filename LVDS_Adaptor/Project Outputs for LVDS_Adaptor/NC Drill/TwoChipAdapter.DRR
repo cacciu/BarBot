@@ -1,0 +1,14 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: TwoChipAdapter.PcbDoc   08.08.2015  17:17:48
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : TwoChipAdapter.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        35.43mil (0.89992mm)     Round          45               7.09 Inch (180.19 mm)
+---------------------------------------------------------------------------
+Totals                                            45               7.09 Inch (180.19 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00

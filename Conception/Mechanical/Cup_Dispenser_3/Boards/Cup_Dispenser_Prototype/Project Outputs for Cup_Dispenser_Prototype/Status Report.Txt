@@ -1,10 +1,12 @@
-Output: Report Single Pin Nets
-Type  : SinglePinNetReporter
-From  : Variant [[No Variations]] of Project [Cup_Dispenser_Prototype.PrjPcb]
-   Generated File[Schematic.REP]
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [Board_Final.PcbDoc]
+   Generated File[Board_Final.TXT]
+   Generated File[Board_Final.LDP]
+   Generated File[Board_Final.DRR]
 
 
-Files Generated   : 1
+Files Generated   : 3
 Documents Printed : 0
 
-Finished Output Generation At 18:29:34 On 03.08.2015
+Finished Output Generation At 12:31:44 On 18.08.2015

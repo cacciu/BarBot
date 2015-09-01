@@ -1,0 +1,6 @@
+Added Component: Designator=*(WLCSP36)
+Added Pin To Net: NetName=GND Pin=*-C5
+Added Pin To Net: NetName=GND Pin=*-D1
+Added Net: Name=GND
+Added Class: Name=MachXO3_Breakout
+Added Room: Name=MachXO3_Breakout

@@ -1,0 +1,454 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 { 
+			font-family : sans-serif;
+			color : white;
+			background-color : #21489e;
+			padding: 0.3em;
+		}
+		body { 
+			font-family : verdana;
+		}
+		td, th {  
+			padding: 0.5em;
+			text-align : center;
+			width : 18%;	
+		}
+		th { 
+			background-color : #A6CAF0;
+		
+		}
+		th.column1, td.column1 { 
+			text-align: left;
+			width : auto; 
+		}
+		table { 
+			width : 100%; 
+		}
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3 {
+			padding-top : 0.1em;
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width : auto;
+			vertical-align: top
+		}
+		.front_matter_column1 {
+			text-align : right;
+		}
+		.total_column1, .total_column {
+			font-weight : bold;	
+		}
+		.total_column1 {
+			text-align : right;
+		}
+		.front_matter_column2 {
+			text-align : center;
+		}
+		.front_matter_column3 {
+			text-align : left;
+		}
+		.warning, .error { 
+			color : red;
+			font-weight : bold;
+		}	
+		tr.onmouseout_odd { 
+			background-color : #EEEEE0 
+		}
+		tr.onmouseout_even { 
+			background-color : #F3F3E3   
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : lightYellow 
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #008000 
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+			
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);		
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {	
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}	
+	</script><title>Net Status Report</title>
+</head>
+<body onload="document.getElementById('radio_mil').click()"><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD14\Templates\AD-rgb_logo_223x64.gif
+		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>Net Status Report</h1>
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">14.08.2015</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">20:19:22</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3"><a href="file:///C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc" class="file"><acronym title="C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc">C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc</acronym></a></td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Units</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">
+<form><input type="radio" name="radio_units" id="radio_mm" onclick="changeUnits(this, 'mm')">mm<input type="radio" name="radio_units" id="radio_mil" onclick="changeUnits(this, 'mil')">mils</form>
+</td>
+</tr>
+</table>
+<hr><a name="ID55JS34P1SLJFBTVQ0RYKXPCCXNXOL2VHJ0OT3XIE0DMUP5IJR00M"><table>
+<tr>
+<th class="column1">Nets</th>
+<th class="column2">Layer</th>
+<th class="column3">Length</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3389.892mil|Location2.X=6964.333mil|Location1.Y=3098.547mil|Location2.Y=4029.779mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3389.892mil|Location2.X=6964.333mil|Location1.Y=3098.547mil|Location2.Y=4029.779mil|Absolute=True">/EN_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="50789959">5078.996mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4237.029mil|Location2.X=7389.089mil|Location1.Y=2339.9mil|Location2.Y=3771.011mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4237.029mil|Location2.X=7389.089mil|Location1.Y=2339.9mil|Location2.Y=3771.011mil|Absolute=True">/EN_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="41220012">4122.001mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">1A_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="4645093">464.509mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6573.72mil|Location2.X=7136.989mil|Location1.Y=2871.59mil|Location2.Y=3043.102mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6573.72mil|Location2.X=7136.989mil|Location1.Y=2871.59mil|Location2.Y=3043.102mil|Absolute=True">1B_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="4758968">475.897mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6740.497mil|Location2.X=7289.07mil|Location1.Y=3001.481mil|Location2.Y=3153.489mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6740.497mil|Location2.X=7289.07mil|Location1.Y=3001.481mil|Location2.Y=3153.489mil|Absolute=True">2A_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="4531231">453.123mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">2B_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="4417354">441.735mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3289.749mil|Location2.X=7143.344mil|Location1.Y=2695.045mil|Location2.Y=4152.965mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3289.749mil|Location2.X=7143.344mil|Location1.Y=2695.045mil|Location2.Y=4152.965mil|Absolute=True">5V</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="98830356">9883.036mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3193.54mil|Location2.X=3969.438mil|Location1.Y=3010.018mil|Location2.Y=4042.202mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3193.54mil|Location2.X=3969.438mil|Location1.Y=3010.018mil|Location2.Y=4042.202mil|Absolute=True">BLANK_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="16357658">1635.766mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4024.43mil|Location2.X=7285.92mil|Location1.Y=2670.937mil|Location2.Y=4059.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4024.43mil|Location2.X=7285.92mil|Location1.Y=2670.937mil|Location2.Y=4059.53mil|Absolute=True">BLANK_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="40604190">4060.419mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3345.541mil|Location2.X=6284.533mil|Location1.Y=2708.863mil|Location2.Y=3920.85mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3345.541mil|Location2.X=6284.533mil|Location1.Y=2708.863mil|Location2.Y=3920.85mil|Absolute=True">DIR_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="43819920">4381.992mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4237.029mil|Location2.X=7225.26mil|Location1.Y=2375.648mil|Location2.Y=3885.726mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4237.029mil|Location2.X=7225.26mil|Location1.Y=2375.648mil|Location2.Y=3885.726mil|Absolute=True">DIR_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="40743065">4074.307mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3130.347mil|Location2.X=4102.15mil|Location1.Y=2929.472mil|Location2.Y=4205.593mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3130.347mil|Location2.X=4102.15mil|Location1.Y=2929.472mil|Location2.Y=4205.593mil|Absolute=True">EST_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="24418244">2441.824mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3828.163mil|Location2.X=7531.665mil|Location1.Y=2412.752mil|Location2.Y=3887.458mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3828.163mil|Location2.X=7531.665mil|Location1.Y=2412.752mil|Location2.Y=3887.458mil|Absolute=True">EST_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="49424412">4942.441mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3566.268mil|Location2.X=7471.005mil|Location1.Y=2375.648mil|Location2.Y=4084.242mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3566.268mil|Location2.X=7471.005mil|Location1.Y=2375.648mil|Location2.Y=4084.242mil|Absolute=True">FILLED</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="60377508">6037.751mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3030.407mil|Location2.X=7122.09mil|Location1.Y=2461.525mil|Location2.Y=4174.246mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3030.407mil|Location2.X=7122.09mil|Location1.Y=2461.525mil|Location2.Y=4174.246mil|Absolute=True">GND</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="49026743">4902.674mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4122.855mil|Location2.X=6203.882mil|Location1.Y=2357.774mil|Location2.Y=2994.558mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4122.855mil|Location2.X=6203.882mil|Location1.Y=2357.774mil|Location2.Y=2994.558mil|Absolute=True">NON</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="26831124">2683.112mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3867.693mil|Location2.X=5597.863mil|Location1.Y=2844.294mil|Location2.Y=3833.69mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3867.693mil|Location2.X=5597.863mil|Location1.Y=2844.294mil|Location2.Y=3833.69mil|Absolute=True">NRST</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="24896602">2489.66mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">NetC10_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="733327">73.333mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">NetC10_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="775321">77.532mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">NetC11_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1125824">112.582mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">NetC11_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="7373636">737.364mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">NetIC1_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2397314">239.731mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">NetIC1_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2348568">234.857mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">NetIC1_4</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2207724">220.772mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">NetIC1_5</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2169197">216.92mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">NetIC1_6</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2091569">209.157mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">NetIC2_7</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2261907">226.191mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4749.5mil|Location2.X=5370mil|Location1.Y=2631.417mil|Location2.Y=3468.533mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4749.5mil|Location2.X=5370mil|Location1.Y=2631.417mil|Location2.Y=3468.533mil|Absolute=True">NetJ6_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="18722112">1872.211mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5845.902mil|Location2.X=6057.889mil|Location1.Y=2628.88mil|Location2.Y=2823.497mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5845.902mil|Location2.X=6057.889mil|Location1.Y=2628.88mil|Location2.Y=2823.497mil|Absolute=True">NetR8_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2050222">205.022mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6068.744mil|Location2.X=6298.146mil|Location1.Y=2708.327mil|Location2.Y=2872.162mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6068.744mil|Location2.X=6298.146mil|Location1.Y=2708.327mil|Location2.Y=2872.162mil|Absolute=True">NetR9_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2044068">204.407mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3970.349mil|Location2.X=5576.074mil|Location1.Y=2689.572mil|Location2.Y=3374.742mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3970.349mil|Location2.X=5576.074mil|Location1.Y=2689.572mil|Location2.Y=3374.742mil|Absolute=True">S1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="20285590">2028.559mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3151.324mil|Location2.X=3969.439mil|Location1.Y=2969.079mil|Location2.Y=3987.738mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3151.324mil|Location2.X=3969.439mil|Location1.Y=2969.079mil|Location2.Y=3987.738mil|Absolute=True">SPI1_MOSI</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="16239058">1623.906mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3277.408mil|Location2.X=3969.438mil|Location1.Y=3036.184mil|Location2.Y=4096.666mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3277.408mil|Location2.X=3969.438mil|Location1.Y=3036.184mil|Location2.Y=4096.666mil|Absolute=True">SPI1_SCK</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="16518069">1651.807mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3402.924mil|Location2.X=3969.438mil|Location1.Y=3207.03mil|Location2.Y=4151.13mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3402.924mil|Location2.X=3969.438mil|Location1.Y=3207.03mil|Location2.Y=4151.13mil|Absolute=True">SPI1_XLAT</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="13742315">1374.232mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4044.115mil|Location2.X=7204.005mil|Location1.Y=2688.811mil|Location2.Y=4116.887mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4044.115mil|Location2.X=7204.005mil|Location1.Y=2688.811mil|Location2.Y=4116.887mil|Absolute=True">SPI2_MOSI</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="39566150">3956.615mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4004.745mil|Location2.X=7367.835mil|Location1.Y=2653.063mil|Location2.Y=4002.173mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4004.745mil|Location2.X=7367.835mil|Location1.Y=2653.063mil|Location2.Y=4002.173mil|Absolute=True">SPI2_SCK</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="42455798">4245.58mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3985.061mil|Location2.X=7449.75mil|Location1.Y=2635.189mil|Location2.Y=3944.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3985.061mil|Location2.X=7449.75mil|Location1.Y=2635.189mil|Location2.Y=3944.815mil|Absolute=True">SPI2_XLAT</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="41738344">4173.834mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3365.319mil|Location2.X=6383.1mil|Location1.Y=2726.737mil|Location2.Y=3975.314mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3365.319mil|Location2.X=6383.1mil|Location1.Y=2726.737mil|Location2.Y=3975.314mil|Absolute=True">STEP_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="45042249">4504.225mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4237.029mil|Location2.X=7307.175mil|Location1.Y=2357.774mil|Location2.Y=3828.368mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4237.029mil|Location2.X=7307.175mil|Location1.Y=2357.774mil|Location2.Y=3828.368mil|Absolute=True">STEP_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="40594679">4059.468mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3659.295mil|Location2.X=4302.115mil|Location1.Y=3010.181mil|Location2.Y=3617.888mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3659.295mil|Location2.X=4302.115mil|Location1.Y=3010.181mil|Location2.Y=3617.888mil|Absolute=True">SWCLK</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="8869368">886.937mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3589.829mil|Location2.X=4182.037mil|Location1.Y=2929.471mil|Location2.Y=3545.954mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3589.829mil|Location2.X=4182.037mil|Location1.Y=2929.471mil|Location2.Y=3545.954mil|Absolute=True">SWDIO</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="9136341">913.634mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4103.17mil|Location2.X=4383.95mil|Location1.Y=2715.274mil|Location2.Y=2994.558mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4103.17mil|Location2.X=4383.95mil|Location1.Y=2715.274mil|Location2.Y=2994.558mil|Absolute=True">UART_RX</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3745118">374.512mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4083.486mil|Location2.X=4283.949mil|Location1.Y=2715.274mil|Location2.Y=2994.558mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4083.486mil|Location2.X=4283.949mil|Location1.Y=2715.274mil|Location2.Y=2994.558mil|Absolute=True">UART_TX</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2989902">298.99mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2996.262mil|Location2.X=7116.184mil|Location1.Y=2659.987mil|Location2.Y=4182.007mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\bastli\Documents\GitHub\BarBot\Conception\Mechanical\Cup_Dispenser_3\Boards\Cup_Dispenser_Prototype\Board_Final.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2996.262mil|Location2.X=7116.184mil|Location1.Y=2659.987mil|Location2.Y=4182.007mil|Absolute=True">VMOT</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="73023489">7302.349mils
+			</a></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br></body>
+</html>

@@ -1,1 +1,3 @@
-Record=TopLevelDocument|FileName=Sheet1.SchDoc
+Record=TopLevelDocument|FileName=TopAdapter.SchDoc
+Record=SheetSymbol|Record=SheetSymbol|SourceDocument=TopAdapter.SchDoc|Designator=LVDSChannel1|SchDesignator=Repeat(LVDSChannel, 1,2)|FileName=LVDS_Channel.SchDoc|SymbolType=Normal|RawFileName=LVDS_Channel.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|Record=SheetSymbol|SourceDocument=TopAdapter.SchDoc|Designator=LVDSChannel2|SchDesignator=Repeat(LVDSChannel, 1,2)|FileName=LVDS_Channel.SchDoc|SymbolType=Normal|RawFileName=LVDS_Channel.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 

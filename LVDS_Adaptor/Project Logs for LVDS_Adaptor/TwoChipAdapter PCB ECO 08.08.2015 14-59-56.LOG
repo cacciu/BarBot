@@ -1,0 +1,61 @@
+Added Component: Designator=C1(1608[0603])
+Added Component: Designator=P1(HDR1X6)
+Added Component: Designator=P2(HDR1X2)
+Added Component: Designator=P3(HDR1X2)
+Added Component: Designator=P4(HDR1X6)
+Added Component: Designator=P5(HDR1X2)
+Added Component: Designator=R1(J1-0603)
+Added Component: Designator=R2(J1-0603)
+Added Component: Designator=R3(J1-0603)
+Added Component: Designator=R4(J1-0603)
+Added Component: Designator=U1(SOP127P600-8N)
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=3V3 Pin=C1-2
+Added Pin To Net: NetName=3V3 Pin=P1-1
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=NEN Pin=P1-4
+Added Pin To Net: NetName=GND Pin=P3-1
+Added Pin To Net: NetName=GND Pin=P3-2
+Added Pin To Net: NetName=3V3 Pin=P4-1
+Added Pin To Net: NetName=GND Pin=P4-2
+Added Pin To Net: NetName=RST Pin=P4-6
+Added Pin To Net: NetName=RST Pin=P5-1
+Added Pin To Net: NetName=GND Pin=P5-2
+Added Pin To Net: NetName=DOUT1_P Pin=R2-2
+Added Pin To Net: NetName=DOUT1_N Pin=R3-2
+Added Pin To Net: NetName=DOUT1_P Pin=U1-7
+Added Pin To Net: NetName=DOUT1_N Pin=U1-8
+Added Pin To Net: NetName=NEN Pin=U1-9
+Added Pin To Net: NetName=DIN1 Pin=U1-10
+Added Pin To Net: NetName=3V3 Pin=U1-12
+Added Pin To Net: NetName=GND Pin=U1-13
+Added Pin To Net: NetName=3V3 Pin=U1-16
+Added Pin To Net: NetName=DIN Pin=P1-3
+Added Net: Name=DIN
+Added Pin To Net: NetName=NBIAS Pin=P1-5
+Added Pin To Net: NetName=NBIAS Pin=R4-1
+Added Net: Name=NBIAS
+Added Pin To Net: NetName=NetP2_1 Pin=P2-1
+Added Pin To Net: NetName=NetP2_1 Pin=R1-1
+Added Pin To Net: NetName=NetP2_1 Pin=R2-1
+Added Net: Name=NetP2_1
+Added Pin To Net: NetName=NetP2_2 Pin=P2-2
+Added Pin To Net: NetName=NetP2_2 Pin=R3-1
+Added Pin To Net: NetName=NetP2_2 Pin=R4-2
+Added Net: Name=NetP2_2
+Added Pin To Net: NetName=PBIAS Pin=P1-6
+Added Pin To Net: NetName=PBIAS Pin=R1-2
+Added Net: Name=PBIAS
+Added Member To Class: ClassName=LVDS_Channel Member=Component C1 Cap Semi
+Added Member To Class: ClassName=LVDS_Channel Member=Component P1 Header 6
+Added Member To Class: ClassName=LVDS_Channel Member=Component P2 Header 2
+Added Member To Class: ClassName=LVDS_Channel Member=Component P3 Header 2
+Added Member To Class: ClassName=TopAdapter Member=Component P4 Header 6
+Added Member To Class: ClassName=TopAdapter Member=Component P5 Header 2
+Added Member To Class: ClassName=LVDS_Channel Member=Component R1 Res3
+Added Member To Class: ClassName=LVDS_Channel Member=Component R2 Res3
+Added Member To Class: ClassName=LVDS_Channel Member=Component R3 Res3
+Added Member To Class: ClassName=LVDS_Channel Member=Component R4 Res3
+Added Member To Class: ClassName=LVDS_Channel Member=Component U1 SN65LVDS049
+Added Room: Name=LVDS_Channel
+Added Room: Name=TopAdapter
