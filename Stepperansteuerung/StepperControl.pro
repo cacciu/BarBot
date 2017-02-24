@@ -1,4 +1,4 @@
-update=22.02.2017 19:06:55
+update=24.02.2017 11:45:41
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../../bastli-kicad-libs
+LibDir=../../bastli-kicad-libs;../../bastli-kicad-libs
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -84,3 +84,4 @@ LibName52=st
 LibName53=standard_components
 LibName54=tcxo
 LibName55=polulu
+LibName56=Nema
