@@ -54,6 +54,7 @@ LIBS:st
 LIBS:standard_components
 LIBS:tcxo
 LIBS:polulu
+LIBS:StepperControl-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -173,4 +174,23 @@ Wire Wire Line
 	6550 3300 6550 3400
 Wire Wire Line
 	6550 3400 6250 3400
+$Comp
+L Stepper U?
+U 1 1 58B01121
+P 7300 3650
+F 0 "U?" H 7050 4000 60  0000 C CNN
+F 1 "Stepper" H 7150 3300 60  0000 C CNN
+F 2 "" H 7300 3650 60  0000 C CNN
+F 3 "" H 7300 3650 60  0000 C CNN
+	1    7300 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3500 6800 3500
+Wire Wire Line
+	6250 3600 6800 3600
+Wire Wire Line
+	6250 3700 6800 3700
+Wire Wire Line
+	6250 3800 6800 3800
 $EndSCHEMATC
